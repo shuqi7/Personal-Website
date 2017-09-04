@@ -1,0 +1,196 @@
+* {
+    margin:0;
+}
+
+body {
+    font-family:"Raleway", sans-serif;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    
+}
+
+p {
+    font-size: 20px;
+}
+
+
+
+/* ======= Header Section =======*/
+
+.header {
+    background-image: url("../img/home-desk.jpeg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    -webkit-background-size:cover;
+    height: 1000px;
+}
+
+.header-overlay {
+    background-color: rgba(31,31,31,0.75);
+    
+}
+
+.header-text {
+    color: #fff;
+    font-style: italic;
+}
+
+
+#smallscreen{
+    display: none;
+}
+
+
+
+/* navigation */
+
+.navbar {
+    margin-top: 15em;
+    width: 100%;
+    min-width: 800px;
+}
+
+
+
+
+nav ul {
+    overflow: hidden;
+    text-align: center;
+    transition: max-height 1s;
+}
+
+.navitem,
+.navitem:focus,
+.navitem:active,
+.navitem:visited
+{
+    
+    background: transparent;
+    border-color:#129CF3;
+
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+
+    
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 3px;
+    position: relative;
+}
+
+.divider{
+    color: white;
+}
+
+
+.navitem:hover {
+    background-color: #129CF3;
+    color: #fff;
+    text-decoration: none;
+}
+
+#profilepic{
+        margin-left:25%;
+    }
+
+
+.menu-icon {
+    width:100%;
+    box-sizing:border-box;
+    cursor:pointer;
+    display: none;
+}
+
+#menu-intro{
+    display: inline-block;
+    padding: 10px;
+    font-size: 25px;
+    text-decoration: none;
+    margin-left: 3em;
+    border-radius: 3px;
+    position: relative;
+    background: transparent;
+    border-color:#129CF3;
+
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+#menu-intro:hover {
+    background-color: #129CF3;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+@media(max-width: 580px) {
+    nav ul li {
+        box-sizing:border-box;
+        width: 100%;
+        text-align: left;
+        padding: 3px;
+    }
+
+    .navbar {
+        margin-top: 1em;
+    }
+
+    .divider{
+        display:none;
+    }
+
+    .header-profile-pic{
+        display: none;
+    }
+
+    #bigscreen{
+        display:none;
+    }
+
+    #smallscreen{
+        display: block;
+    }
+
+    #profilepic{
+        margin-left:25%;
+    }
+
+    .menu-icon{
+        display: block;
+        margin-left: 7%;
+    }
+
+    #menu-intro {
+        color: #187CFF;
+    }
+
+    nav ul {
+        max-height: 0em;
+        margin-top: 3em;
+        margin-left: 13%;
+    }
+
+    .showing {
+        max-height: 20em;
+    }
+}
+
+
+
+
+
