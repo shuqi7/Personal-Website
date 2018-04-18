@@ -302,6 +302,7 @@ nav ul li{
 
 .row{
     padding-top: 10px;
+    width:100%;
 }
 
 /* ----- For icons in content ----- */
@@ -466,6 +467,8 @@ nav ul li{
         padding-left: 5%;
         padding-right: 5%;
     }
+    
+   
 
     #content-container p{
         font-size: 1.5em;
@@ -503,6 +506,7 @@ nav ul li{
     }
 
 
+
     /* ----------------- TOC --------------*/
 
   .toc {
@@ -537,6 +541,9 @@ nav ul li{
 
 /* ---    mobile ---- */
 @media screen and (max-width: 650px){
+    
+    
+    
     .toc ul li a:hover{
         color: #fff;
         background-color: #333333;

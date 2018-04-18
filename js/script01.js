@@ -132,6 +132,28 @@ $(function(){
 
 
 
+$(function(){
+    
+    if ($(window).width() < 1000) {
+           $("#hard-skills").css("width", $(window).width());
+           $("#soft-skills").css("width", $(window).width());
+       } else {
+           $("#hard-skills").css("width", 460);
+           $("#soft-skills").css("width", 460);
+       }
+       
+    $(window).resize(function(){
+       if ($(window).width() < 1000) {
+           $("#hard-skills").css("width", $(window).width());
+           $("#soft-skills").css("width", $(window).width());
+       } else {
+           $("#hard-skills").css("width", 460);
+           $("#soft-skills").css("width", 460);
+       }
+    });
+    console.log("in");
+});
+
  // for scrolling animation effect
 
 $(document).on('click', 'a[href^="#"]', function (event) {
